@@ -1,0 +1,100 @@
+:root {
+    --soft-brown: #bc986a;
+    --dark-overlay: rgba(0, 0, 0, 0.4);
+    --white: #ffffff;
+    --bg-light: #f9f9f9;
+    --bg-dark-coffee: #332929;
+    --gold-brown: #bc986a;
+    --text-main: #333;
+    --text-muted: #666;
+    --text-light: #777;
+    --text-gray: #999;
+    --border-color: #eee;
+    --gold-hover: #a37e50;
+}
+
+body {
+    font-family: "Bricolage Grotesque", sans-serif;
+
+}
+
+.main-header {
+    background-color: var(--bg-light);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo-tilte {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text-main);
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--gold-primary);
+}
+
+.book-now-btn {
+    background-color: var(--gold-primary);
+    background: var(--soft-brown);
+    border: none;
+    padding: 12px 25px;
+
+}
+
+.book-now-btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+
+}
+
+.book-now-btn:hover {
+    background-color: var(--gold-hover);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}

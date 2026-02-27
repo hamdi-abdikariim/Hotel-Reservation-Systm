@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="so">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlostin - Elegant Rooms</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="./Assets/Icon/hotel.png" alt="">
+                <div class="logo-tilte">Reserva</div>
+
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="room.html">Rooms</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="book-now-btn">
+                <a href="./contact.html">BOOK NOW</a>
+            </button>
+        </nav>
+    </header>
+    <!-- section contact -->
+    <section class="contact-section">
+        <div class="contact-header">
+            <h2>CONTACT RESERVA</h2>
+            <div class="stars">★★★★★</div>
+            <p>Have questions or need assistance? Feel free to contact us and our team will respond as soon as possible.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="contact-icon">⌂</div>
+                <h4>VISIT US</h4>
+                <p>We welcome you to visit our hotel and experience comfort and hospitality at its finest.</p>
+                <div class="contact-value">Mogadishu, Somalia</div>
+            </div>
+
+
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <h4>CALL US</h4>
+                <p>Our support team is available to assist you with reservations and inquiries.</p>
+                <div class="contact-value">+252 61 234 5678</div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">✉</div>
+                <h4>EMAIL US</h4>
+                <p>Send us an email and we will get back to you shortly.</p>
+                <div class="contact-value">info@reserva.com</div>
+            </div>
+        </div>
+
+    </section>
+    <!-- form  -->
+    <div class="booking-card">
+        <h2>Reserve Your Room</h2>
+        <form id="resForm">
+            <div class="form-group">
+                <div class="row">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" placeholder="First Name">
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="email@example.com">
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="roomType">Room Type</label>
+                        <select id="roomType">
+                            <option value="" disabled selected> Select Room </option>
+                            <option value="55">Standard Room ($55)</option>
+                            <option value="90">Deluxe Suite ($90)</option>
+                            <option value="135">Family Room ($135)</option>
+                            <option value="155">Junior Suite ($155)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="nights">Nights</label>
+                        <input type="number" id="nights" min="1" value="1">
+                    </div>
+                </div>
+            </div>
+
+            <div id="priceDisplay" class="price-box">Total: $0</div>
+
+            <button type="submit" class="btn-submit">Confirm Reservation</button>
+            <p id="userInfo"></p>
+        </form>
+    </div>
+    <!-- service section -->
+    <section class="services-wrapper">
+        <div class="services-image">
+            <img src="./Assets/img/service img.jpg" alt="Hotel Room">
+        </div>
+
+        <div class="services-content">
+            <div class="services-text">
+                <h2>Our Services & Features</h2>
+                <p>Nanotechnology immersion along the information highway will close the loop on focusing solely on the
+                    bottom line digital divide.</p>
+            </div>
+
+            <div class="services-list">
+                <div class="s-item">
+                    <span class="s-icon">🚗</span>
+                    <div class="s-info">
+                        <h3>Car Rental</h3>
+                        <p>Nanotechnology immersion along the information highway.</p>
+                    </div>
+                </div>
+                <div class="s-item">
+                    <span class="s-icon">📶</span>
+                    <div class="s-info">
+                        <h3>Free WiFi</h3>
+                        <p>Nanotechnology immersion along the information highway.</p>
+                    </div>
+                </div>
+                <div class="s-item">
+                    <span class="s-icon">🏊‍♂️</span>
+                    <div class="s-info">
+                        <h3>Swimming Pool</h3>
+                        <p>Nanotechnology immersion along the information highway.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="contact.js"></script>
+
+</body>
+
+</html>
